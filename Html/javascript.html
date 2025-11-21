@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript</title>
+</head>
+
+<body>
+
+  <header>
+    <table>
+      <tr>
+
+        <td style="width: 10%;">
+          <img src="../images/javascript.jpg" alt="Logo" width="120">
+
+        </td>
+
+        <td style="text-align: left;">
+          <a href="../index.html">Inicio</a> &emsp;&emsp;
+          <a href="etiquetas.html">Etiquetas</a>&emsp;&emsp;
+          <a href="atributos.html">Atributos</a>&emsp;&emsp;
+          <a href="css.html">CSS</a> &emsp;&emsp;
+          <a href="javascript.html">JavaScript</a>
+        </td>
+
+        <td style="text-align: right; width: 11%;">
+          <a href="contacto.html">Contacto</a>&emsp; &emsp;
+          <a href="acercade.html">Acerca de</a>
+        </td>
+        <hr>
+
+      </tr>
+    </table>
+
+  </header>
+
+  <main>
+    <hr>
+    <h1>Contenido</h1>
+    <ol>
+      <ul><a href="#Quees">1- ¿Que es JavaScript?</a></ul>
+      <ul><a href="#Como">2- ¿Como utilizar JavaScript con HTML?</a></ul>
+    </ol>
+    <br><br>
+    <hr>
+    <div style="display: flex; gap: 20px;">
+      <img src="../images/javascript.jpg" width="120" height="70">
+
+      <div id="Quees">
+        <h2>¿Que es JavaScript?</h2>
+        <p>
+          JavaScript es un lenguaje de programación que permite agregar interactividad,
+          dinamismo y lógica a las páginas web. Gracias a JavaScript, una página puede
+          reaccionar a acciones del usuario, cambiar contenido, validar formularios,
+          crear animaciones y mucho más.
+        </p>
+
+        <p>
+          Mientras HTML se encarga de la estructura y CSS del diseño visual, JavaScript
+          aporta el comportamiento que hace que un sitio web sea dinámico.
+        </p>
+      </div>
+    </div>
+
+    <hr>
+    <div style="display: flex; gap: 20px;">
+      <img src="../images/javascript.jpg" width="120" height="70">
+
+      <div id="Como">
+        <h2>¿Como utilizar JavaScript con HTML</h2>
+        <p>
+          JavaScript se puede usar dentro de un documento HTML de tres formas principales:
+          en línea, interno y externo.
+        </p>
+
+        <h3>1. JavaScript en línea</h3>
+        <p>
+          Se escribe directamente dentro de una etiqueta HTML usando un atributo como
+          <code>onclick</code>.
+        </p>
+        <p><strong>Ejemplo:</strong></p>
+        <p>
+          <code>&lt;button onclick="alert('Hola!')"&gt;Presióname&lt;/button&gt;</code>
+        </p>
+
+        <h3>2. JavaScript interno</h3>
+        <p>
+          Se escribe dentro de la etiqueta <code>&lt;script&gt;</code> en el mismo archivo HTML.
+        </p>
+        <p><strong>Ejemplo:</strong></p>
+        <pre><code>
+&lt;script&gt;
+    function saludar() {
+        alert("Hola desde JavaScript interno");
+    }
+&lt;/script&gt;
+
+&lt;button onclick="saludar()"&gt;Saludar&lt;/button&gt;
+</code></pre>
+
+        <h3>3. JavaScript externo</h3>
+        <p>
+          Se coloca en un archivo separado, por ejemplo <code>script.js</code>, y se enlaza al HTML
+          usando la etiqueta <code>&lt;script&gt;</code>.
+        </p>
+        <p><strong>Ejemplo HTML:</strong></p>
+        <pre><code>
+&lt;script src="script.js"&gt;&lt;/script&gt;
+</code></pre>
+
+        <p><strong>Ejemplo script.js:</strong></p>
+        <pre><code>
+alert("JavaScript externo funcionando");
+</code></pre>
+      </div>
+    </div>
+
+    </section>
+  </main>
+
+  <hr>
+
+      <footer>
+        <center>
+          <p>Footer</p>
+        </center>
+      </footer>
+
+</body>
+
+</html>

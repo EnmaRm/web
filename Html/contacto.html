@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Contactos</title>
+</head>
+
+<body>
+
+<header>
+   <table>
+  <tr>
+
+    <td style="width: 10%;">
+      <img src="../images/html.png" alt="Logo" width="70">
+      
+    </td>
+
+    <td style="text-align: left;">
+      <a href="../index.html">Inicio</a> &emsp;&emsp;
+      <a href="etiquetas.html">Etiquetas</a>&emsp;&emsp;
+      <a href="atributos.html">Atributos</a>&emsp;&emsp;
+      <a href="css.html">CSS</a> &emsp;&emsp;
+      <a href="javascript.html">JavaScript</a>
+    </td> 
+
+    <td style="text-align: right; width: 11%;">
+      <a href="contacto.html">Contacto</a>&emsp; &emsp;
+      <a href="acercade.html">Acerca de</a>
+    </td>
+    <hr>
+
+  </tr>
+</table>
+
+  </header>
+
+  <hr>
+<h2>Formulario de contacto</h2>
+
+<form>
+
+    <table cellpadding="8">
+        <tr>
+            <td><label for="asunto"><b>Asunto:</b></label></td>
+            <td>
+                <input type="text" id="asunto" name="asunto" 
+                       placeholder="Escribe el asunto" size="35">
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="correo"><b>Correo:</b></label></td>
+            <td>
+                <input type="email" id="correo" name="correo" 
+                       placeholder="correo@dominio.com" size="35">
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top"><label for="mensaje"><b>Mensaje:</b></label></td>
+            <td>
+                <textarea id="mensaje" name="mensaje" rows="6" cols="40" 
+                          placeholder="Escribe tu mensaje..."></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit">Enviar</button>
+            </td>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>

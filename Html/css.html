@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Css</title>
+</head>
+
+<body>
+
+  <header>
+    <table>
+      <tr>
+
+        <td style="width: 10%;">
+          <img src="../images/Css.png" alt="Logo" width="120">
+
+        </td>
+
+        <td style="text-align: left;">
+          <a href="../index.html">Inicio</a> &emsp;&emsp;
+          <a href="etiquetas.html">Etiquetas</a>&emsp;&emsp;
+          <a href="atributos.html">Atributos</a>&emsp;&emsp;
+          <a href="css.html">CSS</a> &emsp;&emsp;
+          <a href="javascript.html">JavaScript</a>
+        </td>
+
+        <td style="text-align: right; width: 11%;">
+          <a href="contacto.html">Contacto</a>&emsp; &emsp;
+          <a href="acercade.html">Acerca de</a>
+        </td>
+        <hr>
+
+      </tr>
+    </table>
+
+  </header>
+
+  <main>
+    <hr>
+    <section>
+      <h2>Contenido</h2>
+      <ol>
+        <ul><a href="#Quees">1- ¿Qué es CSS?</a></ul>
+        <ul><a href="#Como">2- ¿Como utilizar CSS con HTML?</a></ul>
+        <ul><a href="#linea">3- CSS en línea</a></ul>
+        <ul><a href="#interno">4- CSS Interno</a></ul>
+        <ul><a href="#externo">5- CSS Externo</a></ul>
+      </ol>
+      <br><br>
+      <hr>
+      <div style="display: flex; gap: 20px;">
+        <img src="../images/css.png" width="120" height="70">
+
+        <div id="Quees">
+          <h2>¿Que es CSS?</h2>
+          <p>
+            CSS (Cascading Style Sheets o Hojas de Estilo en Cascada) es el lenguaje que se usa para dar estilo y diseño
+            a las páginas web.
+            Permite controlar colores, tamaños, posiciones, tipografías, márgenes, bordes, fondos y mucho más.
+
+            En pocas palabras: HTML estructura, CSS diseña.
+          </p>
+        </div>
+      </div>
+
+      <hr>
+      <div style="display: flex; gap: 20px;">
+        <img src="../images/css.png" width="120" height="70">
+
+        <div id="Como">
+          <h2>¿Como utilizar CSS en HTML?</h2>
+          <p>
+            CSS se puede usar en una página HTML de 3 formas:
+
+            CSS en línea (inline),
+
+            CSS interno,
+
+            CSS externo
+          </p>
+        </div>
+      </div>
+
+      <hr>
+      <div style="display: flex; gap: 20px;">
+        <img src="../images/css.png" width="120" height="70">
+
+        <div id="linea">
+          <h2>CSS en línea</h2>
+          <p>
+            Es cuando el estilo se coloca directamente en una etiqueta HTML, usando el atributo style.
+            style="color: red; font-size:20px;"
+            style="color: red; font-size:20px;">Este texto está en rojo.
+
+          </p>
+        </div>
+      </div>
+
+      <hr>
+      <div style="display: flex; gap: 20px;">
+        <img src="../images/css.png" width="120" height="70">
+
+        <div id="interno">
+          <h2>CSS Interno</h2>
+          <p>
+            Es cuando los estilos van dentro de la etiqueta style en el mismo archivo HTML, generalmente en head.
+          </p>
+
+          <p>Ejemplo:</p>
+          <pre>
+<code>
+&lt;head&gt;
+    &lt;style&gt;
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Título en azul&lt;/h1&gt;
+&lt;/body&gt;
+</code>
+</pre>
+
+
+        </div>
+      </div>
+
+      <hr>
+      <div style="display: flex; gap: 20px;">
+        <img src="../images/css.png" width="120" height="70">
+
+        <div id="externo">
+          <h2>CSS Externo</h2>
+          <p>
+            Es la manera más profesional y recomendada.
+            El CSS externo se coloca en un archivo separado (por ejemplo, <code>styles.css</code>) y se enlaza al
+            documento HTML usando la etiqueta <code>&lt;link&gt;</code>.
+          </p>
+          <p>En el HTML lo enlazas así:</p>
+
+          <pre>
+<code>
+&lt;!-- Archivo HTML --&gt;
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Título con CSS externo&lt;/h1&gt;
+    &lt;p&gt;Este texto usa estilos desde un archivo externo.&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;!-- Archivo styles.css --&gt;
+h1 {
+    color: green;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+</code>
+</pre>
+
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <center>
+          <p>Footer</p>
+        </center>
+      </footer>
+      </article>
+    </section>
+  </main>
+
+
+</body>
+
+</html>
